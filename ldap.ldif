@@ -1,0 +1,68 @@
+version: 1
+
+dn: ou=Groups,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Groups
+
+dn: cn=John+sn=Doe+uid=jdoe,ou=Users,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: John
+sn: Doe
+title: cn=Administrator+uid=Administrator,ou=Groups,dc=example,dc=com
+uid: jdoe
+userPassword:: e1NTSEF9RGM2KzZrQjNZOGdVN0U2VjFQQmx6dzR2Tkt1MERvTUV6L3B2ZVE9P
+ Q==
+
+dn: cn=AMQGroup,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: AMQGroup
+member: cn=Elvadas Nono+sn=WOGUIA+uid=nelvadas,ou=Users,dc=example,dc=com
+member: cn=John+sn=Doe+uid=jdoe,ou=Users,dc=example,dc=com
+
+dn: ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Users
+
+dn: cn=demo+uid=demo,ou=Users,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: demo
+sn: demo user sn
+title: cn=Administrator+uid=Administrator,ou=Groups,dc=example,dc=com
+uid: demo
+userPassword:: e1NTSEF9dVViZSsyMmMzdUVFZGpBMGNIV1ZURTVZU29NN2NhdXkxbHRaZ1E9P
+ Q==
+
+dn: dc=example,dc=com
+objectclass: top
+objectclass: domain
+dc: example
+
+dn: cn=Elvadas NONO+uid=enonowoguia,ou=Users,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: elvadas nono
+sn: Woguia
+title: cn=Administrator+uid=Administrator,ou=Groups,dc=example,dc=com
+uid: enonowoguia
+userPassword:: e1NTSEF9dlMzVU95V1Bnek9JMUhreG5IV290My9jS0NxZWlGNmlDSlh1SEE9P
+ Q==
+
+dn: cn=Administrator+uid=Administrator,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: administrator
+member: cn=John+sn=Doe+uid=jdoe,ou=Users,dc=example,dc=com
+member: cn=Elvadas NONO,ou=Users,dc=example,dc=com
+uid: administrator
+
